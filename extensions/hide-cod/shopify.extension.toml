@@ -1,0 +1,30 @@
+api_version = "2025-10"
+
+[[extensions]]
+name = "hide-cod"
+handle = "hide-cod"
+
+
+
+
+uid = "92646719-3161-8267-b6b4-b6eff9f336009a816961"
+
+
+
+
+type = "function"
+description = "Hides COD based on city"
+
+  [[extensions.targeting]]
+  target = "purchase.payment-customization.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/app/payment-customization/hide-cod/new"
+  details = "/app/payment-customization/hide-cod/:id"
+

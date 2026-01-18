@@ -1,0 +1,18 @@
+query RunInput {
+  cart {
+    deliveryGroups {
+      deliveryAddress {
+        city
+      }
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+  paymentCustomization {
+    metafield(namespace: "$app:hide-cod", key: "function-configuration") {
+      jsonValue
+    }
+  }
+}

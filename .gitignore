@@ -1,0 +1,59 @@
+# Node / JS
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json    # KEEP this tracked if you use npm! Remove this line if you want to commit the lockfile.
+pnpm-lock.yaml       # KEEP this tracked if you use pnpm! Remove this line if you want to commit the lockfile.
+yarn.lock            # KEEP this tracked if you use yarn! Remove this line if you want to commit the lockfile.
+
+# Process IDs / reports
+pids
+*.pid
+*.seed
+*.pid.lock
+report.*.json
+
+# Build outputs (Remix / general)
+.build
+dist
+/build
+/app/build
+/public/build/
+/app/public/build
+
+# Remix dev cache
+/.cache
+/react-router/
+
+# Public dev artifacts
+/public/_dev
+
+# Functions & extensions build outputs
+/extensions/*/dist
+/extensions/**/dist
+/functions/**/dist
+
+# Databases (local dev only)
+database.sqlite
+/prisma/dev.sqlite
+/prisma/dev.sqlite-journal
+
+# Prisma env files (keep migrations directory tracked)
+# prisma/migrations should be committed
+.env
+.env.*
+
+# Shopify CLI dev files
+.shopify/*
+.shopify.lock
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
