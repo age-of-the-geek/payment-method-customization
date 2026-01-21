@@ -2,7 +2,7 @@
 
 client_id = "f95fa7a685625438d0e40615db169601"
 name = "payment-method-customization"
-application_url = "https://example.com"
+application_url = "https://hide-cod-production.up.railway.app"
 embedded = true
 
 [build]
@@ -16,4 +16,4 @@ api_version = "2026-04"
 scopes = "read_payment_customizations,write_payment_customizations"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://hide-cod-production.up.railway.app/api/auth" ]
