@@ -16,4 +16,7 @@ api_version = "2026-04"
 scopes = "read_payment_customizations,write_payment_customizations"
 
 [auth]
-redirect_urls = [ "https://hide-cod-production.up.railway.app/api/auth" ]
+redirect_urls = [   
+                   "https://hide-cod-production.up.railway.app/api/auth",
+                   "https://hide-cod-production.up.railway.app/api/auth/callback" 
+]
